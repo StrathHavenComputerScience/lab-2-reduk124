@@ -97,23 +97,21 @@ public class Lab2
     Robot.load("blank.txt");
     Robot.setDelay(0.05);
     turnRight();
-    checkerRow();
-    oddRowToEvenRow();
-    checkerRow();
-    evenRowToOddRow();
-    checkerRow();
-    oddRowToEvenRow();
-    checkerRow();
-    evenRowToOddRow();
-    checkerRow();
-    oddRowToEvenRow();
-    checkerRow();
-    evenRowToOddRow();
+    twoRows();
+    twoRows();
+    twoRows();
     checkerRow();
     oddRowToEvenRow();
     checkerRow();
     //INSERT CODE HERE
   }
+  public static void twoRows()
+  {
+    checkerRow();
+    oddRowToEvenRow();
+    checkerRow();
+    evenRowToOddRow();
+}
   public static void checkerRow()
   {
       Robot.makeDark();
